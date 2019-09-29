@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <dingtalk-robot-starter.version>1.5.4.RELEASE</dingtalk-robot-starter.version>
+        <dingtalk-robot-starter.version>1.5.9.RELEASE</dingtalk-robot-starter.version>
     </properties>
 
     <dependencies>
@@ -26,5 +26,47 @@
             <version>${dingtalk-robot-starter.version}</version>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>nexus</id>
+            <name>local private nexus</name>
+            <url>https://nexus.jiahui.com/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>nexus</id>
+            <name>local private nexus</name>
+            <url>https://nexus.jiahui.com/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <name>Releases</name>
+            <url>https://nexus.jiahui.com/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <name>Snapshot</name>
+            <url>https://nexus.jiahui.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
