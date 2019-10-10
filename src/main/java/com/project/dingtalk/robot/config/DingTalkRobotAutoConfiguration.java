@@ -14,10 +14,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DingTalkRobotAutoConfiguration {
 
-	@Bean
-	@ConditionalOnMissingBean
-	public RobotSendServices robotSendServices(){
-		return new RobotSendServices();
-	}
+    @Bean
+    @ConditionalOnMissingBean
+    public RobotSendServices robotSendServices() {
+        return new RobotSendServices();
+    }
 
 }

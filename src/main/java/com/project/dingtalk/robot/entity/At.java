@@ -8,33 +8,33 @@ package com.project.dingtalk.robot.entity;
  */
 public class At {
 
-	private String[] atMobiles;
-	private boolean isAtAll;
+    private String[] atMobiles;
+    private boolean isAtAll;
 
-	public At(String[] atMobiles){
-		if(atMobiles!=null&&atMobiles.length>0){
-			this.atMobiles=atMobiles;
-			this.isAtAll=false;
-		}else{
-			this.atMobiles=new String[0];
-			this.isAtAll=true;
-		}
-	}
+    public At(String[] atMobiles) {
+        if (atMobiles != null && atMobiles.length > 0) {
+            this.atMobiles = atMobiles;
+            this.isAtAll = false;
+        } else {
+            this.atMobiles = new String[0];
+            this.isAtAll = true;
+        }
+    }
 
-	public String[] getAtMobiles() {
-		return atMobiles;
-	}
+    public String[] getAtMobiles() {
+        return atMobiles;
+    }
 
-	public void setAtMobiles(String[] atMobiles) {
-		this.atMobiles = atMobiles;
-	}
+    public void setAtMobiles(String[] atMobiles) {
+        this.atMobiles = atMobiles;
+    }
 
-	public boolean isAtAll() {
-		return isAtAll;
-	}
+    public boolean isAtAll() {
+        return isAtAll;
+    }
 
-	public void setAtAll(boolean atAll) {
-		isAtAll = atAll;
-	}
+    public void setAtAll(boolean atAll) {
+        isAtAll = atAll;
+    }
 
 }

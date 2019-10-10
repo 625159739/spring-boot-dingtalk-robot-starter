@@ -8,37 +8,37 @@ package com.project.dingtalk.robot.entity;
  */
 public class MarkdownMessage {
 
-	private String msgtype="markdown";
-	private Markdown markdown;
-	private At at;
+    private String msgtype = "markdown";
+    private Markdown markdown;
+    private At at;
 
-	public MarkdownMessage(String title,String text,String[] atMobiles){
-		this.markdown=new Markdown(title,text);
-		this.at=new At(atMobiles);
-	}
+    public MarkdownMessage(String title, String text, String[] atMobiles) {
+        this.markdown = new Markdown(title, text);
+        this.at = new At(atMobiles);
+    }
 
-	public String getMsgtype() {
-		return msgtype;
-	}
+    public String getMsgtype() {
+        return msgtype;
+    }
 
-	public void setMsgtype(String msgtype) {
-		this.msgtype = msgtype;
-	}
+    public void setMsgtype(String msgtype) {
+        this.msgtype = msgtype;
+    }
 
-	public Markdown getMarkdown() {
-		return markdown;
-	}
+    public Markdown getMarkdown() {
+        return markdown;
+    }
 
-	public void setMarkdown(Markdown markdown) {
-		this.markdown = markdown;
-	}
+    public void setMarkdown(Markdown markdown) {
+        this.markdown = markdown;
+    }
 
-	public At getAt() {
-		return at;
-	}
+    public At getAt() {
+        return at;
+    }
 
-	public void setAt(At at) {
-		this.at = at;
-	}
+    public void setAt(At at) {
+        this.at = at;
+    }
 
 }

@@ -8,21 +8,21 @@ package com.project.dingtalk.robot.entity;
  */
 public class Text {
 
-	/**
-	 * 消息内容
-	 */
-	private String content;
+    /**
+     * 消息内容
+     */
+    private String content;
 
-	public Text(String content){
-		this.content=content;
-	}
+    public Text(String content) {
+        this.content = content;
+    }
 
-	public String getContent() {
-		return content;
-	}
+    public String getContent() {
+        return content;
+    }
 
-	public void setContent(String content) {
-		this.content = content;
-	}
+    public void setContent(String content) {
+        this.content = content;
+    }
 
 }

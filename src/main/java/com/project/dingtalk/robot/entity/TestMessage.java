@@ -8,37 +8,37 @@ package com.project.dingtalk.robot.entity;
  */
 public class TestMessage {
 
-	private String msgtype="text";
-	private Text text;
-	private At at;
+    private String msgtype = "text";
+    private Text text;
+    private At at;
 
-	public TestMessage(String content,String[] atMobiles){
-		this.text=new Text(content);
-		this.at=new At(atMobiles);
-	}
+    public TestMessage(String content, String[] atMobiles) {
+        this.text = new Text(content);
+        this.at = new At(atMobiles);
+    }
 
-	public String getMsgtype() {
-		return msgtype;
-	}
+    public String getMsgtype() {
+        return msgtype;
+    }
 
-	public void setMsgtype(String msgtype) {
-		this.msgtype = msgtype;
-	}
+    public void setMsgtype(String msgtype) {
+        this.msgtype = msgtype;
+    }
 
-	public Text getText() {
-		return text;
-	}
+    public Text getText() {
+        return text;
+    }
 
-	public void setText(Text text) {
-		this.text = text;
-	}
+    public void setText(Text text) {
+        this.text = text;
+    }
 
-	public At getAt() {
-		return at;
-	}
+    public At getAt() {
+        return at;
+    }
 
-	public void setAt(At at) {
-		this.at = at;
-	}
+    public void setAt(At at) {
+        this.at = at;
+    }
 
 }
